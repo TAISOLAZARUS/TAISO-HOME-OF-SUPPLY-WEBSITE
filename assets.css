@@ -90,3 +90,38 @@ footer {
     max-width: 600px;
     margin: 2em auto;
 }
+/* --- Media Query for Mobile Devices (Max Width 600px) --- */
+@media (max-width: 600px) {
+    /* Adjust Header Layout */
+    header {
+        /* Stack logo and navigation vertically */
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        /* Add some space above the navigation links */
+        padding-top: 0.5em;
+    }
+    .logo {
+        /* Center the logo on small screens and remove left margin */
+        margin: 0 auto;
+    }
+    
+    /* Make Product Cards Full-Width or Near Full-Width */
+    .product-card {
+        /* Products take up more space on small screens */
+        width: 90%; 
+        max-width: 300px; /* Optional max to prevent it from getting too wide on tablets */
+    }
+    
+    /* Adjust Call-to-Action button size for better tapping */
+    .btn {
+        padding: 1em 2em; /* Bigger tap target */
+    }
+    
+    /* Center text in the hero section */
+    .hero {
+        padding: 2em 1em;
+    }
+}
+}
